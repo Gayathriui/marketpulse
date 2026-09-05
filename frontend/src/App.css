@@ -1,0 +1,72 @@
+.app-shell { min-height: 100vh; max-width: 1180px; margin: 0 auto; padding: 0 48px; box-sizing: border-box; }
+.topbar { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; text-decoration: none; letter-spacing: -0.5px; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; color: var(--cream); background: var(--coral); border-radius: 50%; font-family: Georgia, serif; font-size: 20px; }
+.market-status { color: var(--muted); font-size: 12px; letter-spacing: 0.8px; text-transform: uppercase; }
+.topbar-actions { display: flex; align-items: center; gap: 22px; }
+.text-button { padding: 0; color: var(--coral); background: transparent; border: 0; cursor: pointer; font-size: 12px; font-weight: 800; letter-spacing: 0.4px; }
+.text-button:hover { color: var(--ink); }
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 8px; background: var(--teal); border-radius: 50%; }
+.intro { padding: 86px 0 58px; max-width: 650px; }
+.eyebrow { margin: 0 0 14px; color: var(--coral); font-size: 11px; font-weight: 800; letter-spacing: 1.8px; }
+.intro h1 { margin: 0; color: var(--ink); font-family: Georgia, serif; font-size: clamp(48px, 8vw, 92px); font-weight: 400; line-height: 0.98; letter-spacing: -4px; }
+.intro-copy { max-width: 410px; margin-top: 24px; color: var(--muted); font-size: 17px; }
+.page-error { margin: -20px 0 24px; padding: 13px 16px; color: #8f3529; background: var(--peach); border-left: 3px solid var(--coral); font-size: 13px; }
+.workspace { display: grid; grid-template-columns: 290px 1fr; gap: 22px; align-items: stretch; }
+.watchlist-panel, .quote-panel { border: 1px solid var(--line); background: rgba(255, 253, 247, 0.76); }
+.watchlist-panel { padding: 25px 18px; }
+.panel-heading, .quote-card-header { display: flex; justify-content: space-between; align-items: flex-start; }
+.panel-heading h2, .quote-card h2 { margin: 0; color: var(--ink); font-family: Georgia, serif; font-size: 27px; font-weight: 400; }
+.count { display: grid; place-items: center; width: 27px; height: 27px; color: var(--coral); background: var(--peach); border-radius: 50%; font-size: 12px; font-weight: 800; }
+.symbol-list { margin-top: 29px; }
+.symbol-row { display: flex; width: 100%; align-items: center; gap: 12px; padding: 13px 8px; color: var(--ink); background: transparent; border: 0; border-top: 1px solid var(--line); text-align: left; cursor: pointer; }
+.symbol-row:last-child { border-bottom: 1px solid var(--line); }
+.symbol-row:hover, .symbol-row.selected { background: var(--peach); }
+.symbol-select { display: flex; flex: 1; align-items: center; gap: 12px; padding: 0; color: inherit; background: transparent; border: 0; text-align: left; cursor: pointer; }
+.symbol-icon { display: grid; place-items: center; width: 30px; height: 30px; color: var(--cream); background: var(--ink); border-radius: 50%; font-family: Georgia, serif; }
+.symbol-name { display: grid; gap: 2px; flex: 1; }
+.symbol-name strong { font-size: 14px; }
+.symbol-name small { color: var(--muted); font-size: 11px; }
+.row-arrow { color: var(--coral); font-size: 16px; }
+.remove-button { width: 22px; height: 22px; padding: 0; color: var(--muted); background: transparent; border: 0; cursor: pointer; font-size: 16px; }
+.remove-button:hover { color: var(--coral); }
+.add-form { display: flex; gap: 8px; margin-top: 18px; }
+.add-form input { min-width: 0; flex: 1; padding: 10px; color: var(--ink); background: var(--cream); border: 1px solid var(--line); font-size: 12px; text-transform: uppercase; }
+.add-form button { width: 38px; color: var(--cream); background: var(--coral); border: 0; cursor: pointer; font-size: 20px; }
+.add-form button:disabled, .check-button:disabled { opacity: 0.55; cursor: wait; }
+.quote-panel { padding: 25px; }
+.quote-toolbar { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 27px; }
+.quote-toolbar h2 { margin: 0; color: var(--ink); font-family: Georgia, serif; font-size: 27px; font-weight: 400; }
+.check-button { padding: 10px 14px; color: var(--cream); background: var(--coral); border: 0; cursor: pointer; font-size: 12px; font-weight: 800; }
+.search-bar label { display: block; margin-bottom: 9px; color: var(--muted); font-size: 12px; font-weight: 700; }
+.search-controls { display: flex; gap: 8px; }
+.search-controls input { min-width: 0; flex: 1; padding: 13px 14px; color: var(--ink); background: var(--cream); border: 1px solid var(--line); font: inherit; text-transform: uppercase; }
+button { font: inherit; }
+.search-controls button { padding: 0 18px; color: var(--cream); background: var(--ink); border: 0; cursor: pointer; font-size: 13px; font-weight: 700; }
+.search-controls button:hover { background: var(--coral); }
+.quote-card { min-height: 286px; margin-top: 35px; padding: 25px; background: var(--ink); color: var(--cream); }
+.quote-card h2 { color: var(--cream); font-size: 48px; }
+.quote-card .eyebrow { color: var(--gold); }
+.freshness { color: var(--teal); font-size: 12px; }
+.quote-status { display: grid; justify-items: end; gap: 7px; }
+.market-badge { font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.market-badge.open { color: var(--teal); }
+.market-badge.closed { color: var(--coral); }
+.empty-state { display: grid; place-items: center; align-content: center; min-height: 190px; color: #a5aaa4; text-align: center; }
+.empty-state p { font-size: 14px; }
+.pulse-mark { display: grid; place-items: center; width: 38px; height: 38px; margin-bottom: 14px; color: var(--ink); background: var(--gold); border-radius: 50%; font-size: 22px; }
+.error-state .pulse-mark { color: var(--cream); background: var(--coral); }
+.loader { width: 25px; height: 25px; margin-bottom: 17px; border: 3px solid #60655f; border-top-color: var(--gold); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.quote-content { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: end; min-height: 195px; }
+.price-block { display: grid; gap: 7px; }
+.price-label, .metrics span { color: #a5aaa4; font-size: 12px; }
+.price-block strong { font-family: Georgia, serif; font-size: 52px; font-weight: 400; letter-spacing: -2px; }
+.positive { color: var(--teal); font-size: 12px; font-weight: 700; }
+.delayed { color: var(--gold); font-size: 12px; font-weight: 700; }
+.metrics { display: grid; gap: 14px; padding-left: 22px; border-left: 1px solid #414640; }
+.metrics div { display: flex; justify-content: space-between; gap: 10px; }
+.metrics strong { font-size: 13px; }
+.signal-message { grid-column: 1 / -1; margin: 0; padding-top: 15px; color: #a5aaa4; border-top: 1px solid #414640; font-size: 13px; }
+footer { display: flex; justify-content: space-between; padding: 68px 0 28px; color: var(--muted); font-size: 10px; letter-spacing: 1px; }
+@media (max-width: 760px) { .app-shell { padding: 0 20px; } .topbar { height: 72px; } .market-status { font-size: 0; } .market-status .status-dot { margin: 0; } .topbar-actions { gap: 12px; } .intro { padding: 62px 0 42px; } .intro h1 { letter-spacing: -2px; } .workspace { grid-template-columns: 1fr; } .quote-toolbar { align-items: flex-start; gap: 14px; } .quote-content { grid-template-columns: 1fr; gap: 24px; } .metrics { padding: 16px 0 0; border-top: 1px solid #414640; border-left: 0; } footer { padding-top: 42px; } }
