@@ -8,3 +8,4 @@ passlib[bcrypt]
 python-multipart
 yfinance
 python-dotenv
+psycopg2-binary
