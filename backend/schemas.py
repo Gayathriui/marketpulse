@@ -1,9 +1,9 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr
 
 
-# =========================
-# USER SCHEMAS
-# =========================
+# =====================================================
+# USER
+# =====================================================
 
 class UserCreate(BaseModel):
     name: str
@@ -25,14 +25,19 @@ class UserResponse(BaseModel):
         from_attributes = True
 
 
-# =========================
-# WATCHLIST SCHEMAS
-# =========================
+# =====================================================
+# WATCHLIST
+# =====================================================
 
 class WatchlistCreate(BaseModel):
-    name: str = Field(min_length=1, max_length=80)
+    user_id: int | None = None
+    name: str
 
+
+# =====================================================
+# STOCK
+# =====================================================
 
 class StockCreate(BaseModel):
-    symbol: str = Field(min_length=1, max_length=12)
-    stock_name: str = Field(default="", max_length=80)
+    symbol: str
+    stock_name: str
